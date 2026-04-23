@@ -1,10 +1,10 @@
 // Data Soal (10 Soal Pengetahuan Umum & Logika)
 const questionsData = [
-  { p: "Perhatikan pernyataan berikut: “Seseorang sering menggunakan kata ‘gitu loh’ dalam berbicara.”Pernyataan tersebut termasuk dalam ragam bahasa …", o: ["Dialek", "Idiolek", "Sosiolek", "Kronolek"], j: 1 },
-  { p: "Kalimat berikut: “Segarkan harimu dengan minuman ini!” Termasuk ke dalam ragam bahasa …", o: ["Ilmiah", "Hukum", "Jurnalistik", "Iklan"], j: 3 },
-  { p: "Perbedaan mendasar antara ragam bahasa formal dan semiformal adalah …", o: ["Formal menggunakan bahasa daerah, semiformal tidak", "Formal lebih fleksibel dibanding semiformal", "Formal bersifat lebih kaku dan mengikuti kaidah, sedangkan semiformal lebih fleksibel tetapi tetap sopan", "Semiformal hanya digunakan dalam tulisan"], j: 2 },
-  { p: "Ragam bahasa yang muncul karena pengaruh kelompok sosial, seperti penggunaan bahasa gaul dalam pergaulan, disebut …", o: ["Idiolek", "Dialek", "Sosiolek", "Kronolek"], j: 2 },
-  { p: "Perhatikan kalimat berikut: “Banjir melanda beberapa wilayah akibat curah hujan yang tinggi.” Kalimat tersebut termasuk ragam bahasa …", o: ["Ilmiah", "Jurnalistik", "Sastra", "Iklan"], j: 1 },
+  { p: "Perhatikan pernyataan berikut: “Seseorang sering menggunakan kata ‘gitu loh’ dalam berbicara.”Pernyataan tersebut termasuk dalam ragam bahasa …", o: ["A.Dialek", "B.Idiolek", "C.Sosiolek", "D.Kronolek"], j: 1 },
+  { p: "Kalimat berikut: “Segarkan harimu dengan minuman ini!” Termasuk ke dalam ragam bahasa …", o: ["A.Ilmiah", "B.Hukum", "C.Jurnalistik", "D.Iklan"], j: 3 },
+  { p: "Perbedaan mendasar antara ragam bahasa formal dan semiformal adalah …", o: ["A.Formal menggunakan bahasa daerah, semiformal tidak", "B.Formal lebih fleksibel dibanding semiformal", "C.Formal bersifat lebih kaku dan mengikuti kaidah, sedangkan semiformal lebih fleksibel tetapi tetap sopan", "D.Semiformal hanya digunakan dalam tulisan"], j: 2 },
+  { p: "Ragam bahasa yang muncul karena pengaruh kelompok sosial, seperti penggunaan bahasa gaul dalam pergaulan, disebut …", o: ["A.Idiolek", "B.Dialek", "C.Sosiolek", "D.Kronolek"], j: 2 },
+  { p: "Perhatikan kalimat berikut: “Banjir melanda beberapa wilayah akibat curah hujan yang tinggi.” Kalimat tersebut termasuk ragam bahasa …", o: ["A.Ilmiah", "B.Jurnalistik", "C.Sastra", "D.Iklan"], j: 1 },
 ];
 
 // Data Nama (25 Nama Custom)
@@ -45,7 +45,7 @@ let availableQuestions = [...questionsData];
 let isAnimating = false;
 let currentPickedName = '';
 let countdown;
-let timeLeft = 15;
+let timeLeft = 20;
 let isAnswered = false;
 
 // ---- Audio Synthesizer (Web Audio API) untuk SoundFX ----
@@ -297,7 +297,7 @@ function showQuestion(tumbalName) {
 }
 
 function startTimer() {
-  timeLeft = 15;
+  timeLeft = 20;
   isAnswered = false;
   timerTextEl.textContent = timeLeft;
   timerContainer.classList.remove('timer-low');
@@ -363,7 +363,7 @@ function showAlert(isCorrect, isTimeout) {
   if (isCorrect) {
     alertTitleEl.textContent = "BENAR!";
     alertTitleEl.className = "success-text";
-    alertMessageEl.textContent = "Luar biasa! Mangsa ini cerdas!";
+    alertMessageEl.textContent = "Luar biasa! Tumbal ini cerdas!";
     
     // Suara Terompet Tada & Tepuk Tangan 
     sfx.correct();
@@ -427,7 +427,7 @@ btnContinue.addEventListener('click', () => {
   const animContainer = document.querySelector('.anim-container');
   if(animContainer) animContainer.remove();
   
-  btnDraw.textContent = "CARI MANGSA";
+  btnDraw.textContent = "CARI TUMBAL";
   if(availableQuestions.length > 0 && availableNames.length > 0) {
     btnDraw.disabled = false;
   } else {
