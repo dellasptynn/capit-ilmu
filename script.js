@@ -1,10 +1,10 @@
 // Data Soal (10 Soal Pengetahuan Umum & Logika)
 const questionsData = [
-  { p: "Perhatikan pernyataan berikut: “Seseorang sering menggunakan kata ‘gitu loh’ dalam berbicara.”Pernyataan tersebut termasuk dalam ragam bahasa …", o: ["A.Dialek", "B.Idiolek", "C.Sosiolek", "D.Kronolek"], j: 1 },
-  { p: "Kalimat berikut: “Segarkan harimu dengan minuman ini!” Termasuk ke dalam ragam bahasa …", o: ["A.Ilmiah", "B.Hukum", "C.Jurnalistik", "D.Iklan"], j: 3 },
-  { p: "Perbedaan mendasar antara ragam bahasa formal dan semiformal adalah …", o: ["A.Formal menggunakan bahasa daerah, semiformal tidak", "B.Formal lebih fleksibel dibanding semiformal", "C.Formal bersifat lebih kaku dan mengikuti kaidah, sedangkan semiformal lebih fleksibel tetapi tetap sopan", "D.Semiformal hanya digunakan dalam tulisan"], j: 2 },
-  { p: "Ragam bahasa yang muncul karena pengaruh kelompok sosial, seperti penggunaan bahasa gaul dalam pergaulan, disebut …", o: ["A.Idiolek", "B.Dialek", "C.Sosiolek", "D.Kronolek"], j: 2 },
-  { p: "Perhatikan kalimat berikut: “Banjir melanda beberapa wilayah akibat curah hujan yang tinggi.” Kalimat tersebut termasuk ragam bahasa …", o: ["A.Ilmiah", "B.Jurnalistik", "C.Sastra", "D.Iklan"], j: 1 },
+  { p: "Perhatikan pernyataan berikut: “Seseorang sering menggunakan kata ‘gitu loh’ dalam berbicara.”Pernyataan tersebut termasuk dalam ragam bahasa …", o: ["A. Dialek", "B. Idiolek", "C. Sosiolek", "D. Kronolek"], j: 1 },
+  { p: "Kalimat berikut: “Segarkan harimu dengan minuman ini!” Termasuk ke dalam ragam bahasa …", o: ["A. Ilmiah", "B. Hukum", "C. Jurnalistik", "D. Iklan"], j: 3 },
+  { p: "Perbedaan mendasar antara ragam bahasa formal dan semiformal adalah …", o: ["A. Formal menggunakan bahasa daerah, semiformal tidak", "B. Formal lebih fleksibel dibanding semiformal", "C. Formal bersifat lebih kaku dan mengikuti kaidah, sedangkan semiformal lebih fleksibel tetapi tetap sopan", "D. Semiformal hanya digunakan dalam tulisan"], j: 2 },
+  { p: "Ragam bahasa yang muncul karena pengaruh kelompok sosial, seperti penggunaan bahasa gaul dalam pergaulan, disebut …", o: ["A. Idiolek", "B. Dialek", "C. Sosiolek", "D. Kronolek"], j: 2 },
+  { p: "Perhatikan kalimat berikut: “Banjir melanda beberapa wilayah akibat curah hujan yang tinggi.” Kalimat tersebut termasuk ragam bahasa …", o: ["A. Ilmiah", "B. Jurnalistik", "C. Sastra", "D. Iklan"], j: 1 },
 ];
 
 // Data Nama (25 Nama Custom)
