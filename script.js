@@ -427,7 +427,7 @@ btnContinue.addEventListener('click', () => {
   const animContainer = document.querySelector('.anim-container');
   if(animContainer) animContainer.remove();
   
-  btnDraw.textContent = "CARI TUMBAL";
+  btnDraw.textContent = "CARI MANGSA";
   if(availableQuestions.length > 0 && availableNames.length > 0) {
     btnDraw.disabled = false;
   } else {
