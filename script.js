@@ -45,7 +45,7 @@ let availableQuestions = [...questionsData];
 let isAnimating = false;
 let currentPickedName = '';
 let countdown;
-let timeLeft = 20;
+let timeLeft = 15;
 let isAnswered = false;
 
 // ---- Audio Synthesizer (Web Audio API) untuk SoundFX ----
