@@ -363,7 +363,7 @@ function showAlert(isCorrect, isTimeout) {
   if (isCorrect) {
     alertTitleEl.textContent = "BENAR!";
     alertTitleEl.className = "success-text";
-    alertMessageEl.textContent = "Luar biasa! Tumbal ini cerdas!";
+    alertMessageEl.textContent = "Luar biasa! Mangsa ini cerdas!";
     
     // Suara Terompet Tada & Tepuk Tangan 
     sfx.correct();
